@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/first_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/account_value_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Value" />
+
+    <EditText
+        android:id="@+id/account_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/monthly_savings_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Savings" />
+
+    <EditText
+        android:id="@+id/monthly_savings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/step_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up!"
+        android:onClick="registerUser" />
+
+</LinearLayout>

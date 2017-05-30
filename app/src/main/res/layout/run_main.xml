@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/account_value_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Value" />
+
+    <EditText
+        android:id="@+id/accountValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/monthly_savings_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Savings" />
+
+    <EditText
+        android:id="@+id/monthlySavings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/year_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="2017" />
+
+    <Button
+        android:id="@+id/step_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Step!"
+        android:onClick="executeStep" />
+</LinearLayout>
