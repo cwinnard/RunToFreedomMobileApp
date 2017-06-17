@@ -8,102 +8,117 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Run to Freedom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="85dp"
-        android:layout_height="0dp"
-        app:srcCompat="@android:drawable/star_big_on"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/first_name"
+        android:layout_marginTop="53dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="55dp"
+        app:layout_constraintLeft_toLeftOf="@+id/run_to_freedom"
+        app:layout_constraintTop_toTopOf="@+id/run_to_freedom"
+        android:layout_marginLeft="55dp"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/run_to_freedom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Run to Freedom"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/first_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Username"
+        android:text="FirstName"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="117dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp" />
+        android:layout_marginRight="8dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="125dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="0dp"
+        android:id="@+id/account_value_label"
+        android:layout_width="152dp"
         android:layout_height="47dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Account Value"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/editText8"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText6"
+        app:layout_constraintRight_toRightOf="@+id/monthly_savings_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/account_value"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/editText8" />
+        app:layout_constraintLeft_toLeftOf="@+id/monthly_savings_label"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/account_value"
         android:layout_width="0dp"
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="number"
         android:text="1,000,000"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintRight_toRightOf="@+id/editText4"
-        android:layout_marginTop="55dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="56dp"
-        app:layout_constraintLeft_toLeftOf="@+id/editText9"
-        app:layout_constraintTop_toTopOf="@+id/editText4" />
+        app:layout_constraintLeft_toLeftOf="@+id/monthly_savings"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/monthly_savings"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintTop_toTopOf="@+id/first_name" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/monthly_savings_label"
         android:layout_width="155dp"
         android:layout_height="44dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Montlhy Savings"
         android:layout_marginStart="8dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/monthly_savings"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/monthly_savings"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -118,39 +133,114 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/editText8"
+        app:layout_constraintLeft_toRightOf="@+id/monthly_savings_label"
         android:layout_marginLeft="9dp"
         android:layout_marginRight="7dp" />
 
+    <TextView
+        android:id="@+id/previous_runs_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Runs"
+        android:textSize="50px"
+        app:layout_constraintRight_toLeftOf="@+id/monthly_savings"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/monthly_savings"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/monthly_savings"
+        app:layout_constraintHorizontal_bias="0.509"
+        android:layout_marginTop="8dp" />
+
     <TableLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:id="@+id/tableLayout"
+        android:layout_height="109dp"
+        android:stretchColumns="1"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/editText4"
-        android:layout_marginTop="7dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText9"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="89dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintLeft_toLeftOf="@+id/editText4">
+        android:layout_marginBottom="79dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/monthly_savings">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <TableRow>
+            <TextView
+                android:gravity="left"
+                android:text="Run" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center"
+                android:text="Start Account Value" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <TextView
+                android:gravity="right"
+                android:text="End Account Value" />
+        </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <TableRow>
+            <EditText
+                android:id="@+id/run_run1"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Do" />
+
+            <EditText
+                android:id="@+id/start_account_value_run1"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Another" />
+
+            <EditText
+                android:id="@+id/end_account_value_run1"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Run!" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/run_run2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Do" />
+
+            <EditText
+                android:id="@+id/start_account_value_run2"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Another" />
+
+            <EditText
+                android:id="@+id/end_account_value_run2"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Run!" />
+        </TableRow>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/dd3"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Do" />
+
+            <EditText
+                android:id="@+id/start_account_value_run3"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Another" />
+
+            <EditText
+                android:id="@+id/end_account_value_run3"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Run!" />
+        </TableRow>
     </TableLayout>
+
+
 </android.support.constraint.ConstraintLayout>

@@ -15,6 +15,7 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import dwf.com.model.AccountDTO;
+import dwf.com.session.SessionManager;
 
 /**
  * Created by Charlie Winnardd on 5/29/2017.
@@ -42,7 +43,7 @@ public class Registration extends AppCompatActivity {
         @Override
         protected AccountDTO doInBackground(Void... params) {
             AccountDTO request = buildRequest();
-            final String url = "http://192.168.2.6:8080/addUser";
+            final String url = "http://192.168.1.19:8080/addUser";
 
             try {
                 Log.d(TAG, "attempting beginning of REST call");
@@ -75,6 +76,10 @@ public class Registration extends AppCompatActivity {
         @Override
         protected void onPostExecute(AccountDTO dto) {
             Log.d(TAG, "onPostExecute");
+            Log.w(TAG, "creating session manager");
+            SessionManager sessionManager = new SessionManager(getApplicationContext());
+            sessionManager.storeUserData(dto);
+            Log.w(TAG, "opening dialog");
             openDialog();
         }
 

@@ -13,6 +13,7 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import dwf.com.model.StepDTO;
+import dwf.com.session.SessionManager;
 
 /**
  * Created by Charlie Winnardd on 5/25/2017.
@@ -40,7 +41,7 @@ public class Run extends AppCompatActivity {
         @Override
         protected StepDTO doInBackground(Void... params) {
             StepDTO request = buildRequest();
-            final String url = "http://192.168.2.6:8080/step";
+            final String url = "http://192.168.1.19:8080/step";
 
             try {
                 Log.w(TAG, "attempting beginning of REST call");
@@ -59,10 +60,12 @@ public class Run extends AppCompatActivity {
 
         private StepDTO buildRequest() {
             StepDTO request = new StepDTO();
+            SessionManager sessionManager = new SessionManager(getApplicationContext());
             EditText accountValue = (EditText) findViewById(R.id.accountValue);
             EditText monthlySavings = (EditText) findViewById(R.id.monthlySavings);
             request.setAccountValue(Double.valueOf(accountValue.getText().toString()));
             request.setMonthlySavings(Double.valueOf(monthlySavings.getText().toString()));
+            request.setRunId(sessionManager.getUserData().getCurrentRunID());
             return request;
         }
 

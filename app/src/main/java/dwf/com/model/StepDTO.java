@@ -5,9 +5,16 @@ package dwf.com.model;
  */
 
 public class StepDTO {
+    int runId;
     double accountValue;
     double monthlySavings;
 
+    public int getRunId() {
+        return runId;
+    }
+    public void setRunId(int runId) {
+        this.runId = runId;
+    }
     public double getAccountValue() {
         return accountValue;
     }
